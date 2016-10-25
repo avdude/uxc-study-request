@@ -1,0 +1,158 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ h2 {
+  text-align:left;
+  color:gray;
+}
+/*
+form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 550px;
+  
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #4668c5;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+*/
+
+.newstudyquestion{
+    margin-top: 15px;
+}
+input {
+  width: 475px;
+  display: block;
+  border: 1px solid #999;
+  height: 35px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input[type="checkbox"] {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    border: 0px solid #999;
+
+}
+select {
+      width: 475px;
+  display: block;
+  border: 1px solid #999;
+  height: 35px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input[type="radio"] {
+    display:inline;
+    width:19px;
+    height:19px;
+    margin:4px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+input[type="submit"] {
+    margin-top: 15px;
+    width: 175px;
+    height: 50px;
+    display: block;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+      border: 1px solid #999;
+      -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+
+}
+textarea{
+  width: 500px;
+  height: 150px;
+  display: block;
+        border: 0px solid #999;
+      -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+legend{
+  color: #4668c5; 
+  margin-top: 15px; 
+}
+label{
+  color: #4668c5; 
+  margin-top: 15px; 
+}
+button {
+  width: 60px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+.sectionhead{
+    color:purple;
+}
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}
+#errors{
+    color:red;
+}
+/*
+#newstudyform label.error {
+color:red;}
+#newstudyform label.error {
+	display: inline-block;
+    margin-left:  500px;
+}
+
+}
+#newstudyform input.error {
+border:1px solid red;
+}*/
+#newstudyform input.invalid, textarea.invalid, select.invalid
+{
+    background-color: #ffdddd;
+}
+.fa-asterisk{
+    color: B22222;
+}
+
+#TB_closeWindowButton{
+    position: static !important; 
+  height:25px;
+  float:right;
+}
+/*
+.ui-datepicker {
+    margin-left:500px !important;
+    margin-top: -20px !important;
+
+} */
