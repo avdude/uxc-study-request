@@ -53,6 +53,8 @@
     if ($sql['gratuity']=='Y'){
     $body .= '<tr bgcolor="lightblue" ><td colspan="2"><b>Gratuity</b></td></tr>';
     
+    $body .= '<tr bgcolor="#F5F5F5"><td><b>Is this a purchase pass only request?</b></td><td>'.$sql['purchasepass'].'</td></tr>'; 
+    $body .= '<tr ><td><b>If purchase pass only, how many purchase passes are needed?</b></td><td>$ '.$sql['passcount'].'.00</td></tr>';
     $body .= '<tr bgcolor="#F5F5F5"><td><b>How many cards?</b></td><td>'.$sql['cardcount'].'</td></tr>';
     $body .= '<tr ><td><b>What amount for each gift card?</b></td><td>$ '.$sql['cardamount'].'.00</td></tr>';
     $body .= '<tr bgcolor="#F5F5F5"><td><b>Do you need "Take In Advance" for the gift cards?</b></td><td>'.$sql['cardadvance'].'</td></tr>'; 

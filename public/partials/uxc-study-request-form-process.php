@@ -67,6 +67,8 @@ $participantbring  = implode( "\n", $participantbring  );
 $location = sanitize_text_field( $_POST['location'] );
 
 //gratuity related fields
+$cardadvance = $this->post_checkbox('purchasepass');
+$passcount = sanitize_text_field( $_POST['passcount'] );
 $cardcount = sanitize_text_field( $_POST['cardcount'] );
 $cardamount = sanitize_text_field( $_POST['cardamount'] );
 $cardadvance = $this->post_checkbox('takenadvance');
@@ -138,14 +140,15 @@ $sql=array( 'alias'=>$alias,  'submit_date'=>current_time('mysql', 1),'study_nam
             'participants'=>$participants,'waiver'=>$waiver,'gratuity'=>$gratuity,'survey'=>$survey,'costcenter'=>$cost, 
             'start'=>$start, 'end'=>$end, 'researcher'=>$researcher, 'alternate'=>$alternate, 'comments'=>$comments,
             'study_type'=>$type, 'participant_req'=>$partreq,'extra_participant'=>$extrapart, 'profile'=>$profile, 'part_per_session'=>$partpersession, 
-            'schedule'=>$schedule, 'participant_bring'=>$participantbring,'cardcount'=>$cardcount,'cardamount'=>$cardamount, 'cardadvance'=>$cardadvance,
+            'schedule'=>$schedule, 'participant_bring'=>$participantbring, 'purchasepass'=>$purchasepass,'passcount'=>$passcount,
+            'cardcount'=>$cardcount,'cardamount'=>$cardamount, 'cardadvance'=>$cardadvance,
             'labtype'=>$labtype, 'lablocation'=>$lablocation,'many_pc'=>$manypc,'pcos'=>$pcos, 'bring_device'=>$bringdevice, 'setup_time'=>$setuptime, 'doccam'=>$doccam,
             'eyetracker'=>$eyetracker,'hardware_req'=>$hardwarereq,  'labsetup'=>$labsetup,'location'=>$location,'screener_name'=>$fileName,'screener'=>$filename);
 
 //printf("<pre>%s</pre>",print_r($sql, true));
 
 $sql_data = array(  '%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s',
-                    '%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s',
+                    '%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s',
                     '%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s' );
 
 if ($wpdb->insert( 'wp_uxc_study_request', $sql, $sql_data )){ 

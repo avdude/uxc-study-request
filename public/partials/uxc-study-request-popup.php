@@ -52,6 +52,8 @@
     //Gratuity
     if ($request->gratuity=='Y'){
     $body .= '<tr bgcolor="lightblue" ><td colspan="2"><b>Gratuity</b></td></tr>';
+    $body .= '<tr bgcolor="#F5F5F5"><td><b>Is this a purchase pass only request?</b></td><td>'.$request->purchasepass.'</td></tr>'; 
+    $body .= '<tr ><td><b>If purchase pass only, how many purchase passes are needed?</b></td><td>$ '.$request->passcount.'.00</td></tr>';
     
     $body .= '<tr bgcolor="#F5F5F5"><td><b>How many cards?</b></td><td>'.$request->cardcount.'</td></tr>';
     $body .= '<tr ><td><b>What amount for each gift card?</b></td><td>$ '.$request->cardamount.'.00</td></tr>';

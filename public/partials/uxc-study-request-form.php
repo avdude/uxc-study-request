@@ -119,6 +119,16 @@
     <hr />
     <h3 class="sectionhead">Gratuity Specific Details</h3>
         <div class="newstudyquestion" >
+            <legend>Gratuity includes a company store purchase pass, however on occasion you many only desire to give a purchase pass only</legend>
+            <ul style="list-style-type: none;">
+                   <li><input type="checkbox" name="purchasepass" id="purchasepass" value="purchasepass"/><label for="purchasepass"> Yes I want Purchase Pass Only</label></li>
+            </ul>
+        </div> 
+        <div class="newstudyquestion" >
+            <legend>How many purchase passes would you like? (for purchase pass only gratuity)<i class="fa fa-asterisk" aria-hidden="true"  style="color:#F08080;"></i> </legend>
+            <input type="text" id="passcount" name="passcount" />
+        </div>
+        <div class="newstudyquestion" >
             <legend>How many gift cards would you like?<i class="fa fa-asterisk" aria-hidden="true"  style="color:#F08080;"></i> </legend>
             <input type="text" id="cardcount" name="cardcount" />
         </div>

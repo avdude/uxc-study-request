@@ -16,7 +16,7 @@
  * Plugin Name:       UXC Study Request
  * Plugin URI:        www.avdude.com
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            David Fleming
  * Author URI:        www.avdude.com
  * License:           GPL-2.0+
